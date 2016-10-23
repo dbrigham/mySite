@@ -76,5 +76,5 @@ define('resources/index',["exports"], function (exports) {
   exports.configure = configure;
   function configure(config) {}
 });
-define('text!app.html', ['module'], function(module) { module.exports = "<template>\n  <h1>${message}</h1>\n  <h2>${author}</h2>\n  <ul>\n    <li repeat.for=\"x of 10\">${x}</li>\n  </ul>\n</template>\n"; });
+define('text!app.html', ['module'], function(module) { module.exports = "<template>\n  <h1>${message}</h1>\n  <h2>${author}</h2>\n  <ul>\n    <li repeat.for=\"x of 10\">${x}</li>\n  </ul>\n  <table>\n    <tr repeat.for=\"r of 12\">\n      <td repeat.for=\"c of 8\">${r}:${c}\n      </td>\n    </tr>\n  </table>\n</template>\n"; });
 //# sourceMappingURL=app-bundle.js.map
